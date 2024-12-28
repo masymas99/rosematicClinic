@@ -37,3 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // end card animation
     
   });
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // عند تحميل الصفحة بالكامل
+    window.onload = function() {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+        
+        // إخفاء اللودر وعرض المحتوى
+        loader.style.display = "none";
+        content.style.display = "block";
+    };
+});
