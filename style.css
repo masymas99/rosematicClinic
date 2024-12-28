@@ -171,7 +171,7 @@ h3 {
 
 .logo img {
     position: absolute;
-    top: -3%;
+    top: 3%;
     left: -80%;
     width: 228px;
     height: 155px;
@@ -250,8 +250,6 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
 }
 .servcard img {
     border-radius: 19px;
@@ -260,6 +258,24 @@ h3 {
     height: 100%;
     z-index: 2;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.services h2{
+    text-align: center;
+    position: relative;
+    top: -13px;
+    font-size: 40px;
+    align-items: center;
+    color: #ea4089;
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 0.5px 0px 1px rgb(53, 46, 46);
+    opacity: 1; /* Make it initially invisible */
+    transform: translateY(0px); /* Move it down */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.services h2.show {
+  opacity: 1;
+  transform: translateY(100px);
 }
 .services h1 {
     text-align: center;
@@ -270,35 +286,20 @@ h3 {
     font-weight: bold;
     z-index: 2;
     text-shadow: 0.5px 0px 1px rgb(53, 46, 46);
-    opacity: 1; /* Make it initially invisible */
-  transform: translateY(100px); /* Move it down */
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.services h1.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-.services {
-    margin-top: 33PX;
-    padding: 0PX;
+    
 }
 
-.servcards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    padding: 0px;
+
+/* swiper css */
+  .swiper {
     width: 80%;
-    height: 800px;
-    padding: 87px;
-}
-
-.servcard {
-
+    height: auto; /* adjust as needed */
+    margin: 20px auto;
+    position: relative;
+  }
+  .swiper-slide {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* تغيير الاتجاه إلى عمودي */
     justify-content: center;
     align-items: center;
     border-radius: 20px 20px 20px 20px;
@@ -307,45 +308,51 @@ h3 {
     position: relative;
     width: 343px;
     height: 316px;
-    
     margin-bottom: 80px;
     background-color: #e32b7ba7;
-    opacity: 0; /* Make it initially invisible */
-  transform: translateX(-50px); /* Move it to the left */
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.servcard h1 {
-    position: relative;
-    bottom: -57px;
-    height: 70px;
-    width: 65%;
-    height: 70px;
-        width: 85%;
-        color: #ffffff;
-        background-color: #224554;
-        border-radius: 40px 5px 40px 7px;
-}
+  }
 
-.servcard.show {
-    opacity: 1;
-    transform: translateX(0);
+.swiper-slide img {
+    border-radius: 19px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    object-fit: cover; 
+  }
+  
+  .swiper-slide h1 {
+    position: relative;
+    left: -11px;
+    bottom: -31px; 
+    margin-top: auto;  
+    width: 85%;
+    color: #ffffff;
+    background-color: #224554;
+    border-radius: 40px 5px 40px 7px;
+    padding: 10px;
+    text-align: center; 
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+   
+    color: #224554; /* Customize arrow color */
+  }
+
+   /* Responsive styling */
+  @media (max-width: 768px) {
+    .swiper-slide {
+    width: 90%; /* Adjust slide width on smaller screens */
+  }
+  .swiper{
+      width: 90%;
+  }
 }
-/* Add animation-delay to stagger the animation */
-.servcard:nth-child(2){
-    transition-delay: 0.2s;
-    }
-    .servcard:nth-child(3) {
-        transition-delay: 0.4s;
-    }
-    .servcard:nth-child(4) {
-        transition-delay: 0.6s;
-    }
-    .servcard:nth-child(5) {
-        transition-delay: 0.8s;
-    }
-    .servcard:nth-child(6){
-        transition-delay: 1s;
-    }
+ /* end swiper css */
+
+
 
 @media screen and (max-width: 320px) {
 
@@ -401,8 +408,8 @@ h3 {
     .logo img {
         position: relative;
         width: 206px;
-        top: 6vh;
-        right: 17vw;
+        top: 7vh;
+        right: 7vw;
         transform: translate(-50%, -50%);
         font-size: 25px;
         color: rgb(255, 255, 255);
