@@ -277,9 +277,10 @@ h3 {
   opacity: 1;
   transform: translateY(100px);
 }
-.services h1 {
+.services h3 {
     text-align: center;
-
+    position: relative;
+    top: 73px; 
     font-size: 40px;
     align-items: center;
     color: #ea4089;
@@ -322,10 +323,9 @@ h3 {
     object-fit: cover; 
   }
   
-  .swiper-slide h1 {
+  .swiper-slide h3{
     position: relative;
-    left: -11px;
-    bottom: -31px; 
+    left: 170px;
     margin-top: auto;  
     width: 85%;
     color: #ffffff;
@@ -390,12 +390,12 @@ h3 {
         background-color: #e32b7ba7;
     }
 
-    .servcard h1 {
+    .servcard h3 {
        display: flex;
        justify-content: center;
         position: relative;
         border-radius: 0px 0px 19px 19px;
-        bottom: -24px;
+        bottom: -21px;
         background-color: #e1e2dd;
         height: 70px;
         width: 100%;
@@ -445,7 +445,7 @@ h3 {
         background-color: #e32b7ba7;
     }
 
-    .servcard h1 {
+    .servcard h3 {
        display: flex;
        justify-content: center;
         position: relative;
@@ -491,7 +491,7 @@ h3 {
         width: 400px;
         background-color: #e32b7ba7;
     }
-    .servcard h1 {
+    .servcard h3 {
        display: flex;
        justify-content: center;
         position: relative;
@@ -526,7 +526,7 @@ h3 {
         z-index: 1;
         text-shadow: 1px 1px 1px rgb(0, 0, 0);
     }
-    .servcard h1 {
+    .servcard h3 {
        display: flex;
        justify-content: center;
         
