@@ -17,12 +17,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Before After Slider CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/before-after-slider-component@latest/dist/style.css">
+     <script src="https://cdn.jsdelivr.net/npm/before-after-slider@1.0.0/dist/slider.bundle.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <div id="loader"></div>
-    <div id="content" style="display: none;"> -->
         <div class="whatsappbttn"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -37,10 +40,10 @@
                             <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">الخدمات</a>
+                            <a class="nav-link" href="#services">الخدمات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">سابقات الاعمال </a>
+                            <a class="nav-link" href="#portofolio"> بـعض أعمالنا   </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">الأسعار</a>
@@ -70,7 +73,7 @@
         </div>
 
         <!-- Services -->
-       <div class="services">
+       <div class="services" id="services">
           <h2>ما نقدمه لبشرتك</h2>
           <!-- Swiper========================== -->
           <div class="swiper mySwiper">
@@ -107,6 +110,40 @@
           <!-- end of sweiper================================ -->
        </div>
     </div>
+   <!-- Portofolio =============== -->
+
+
+
+ <div class="portofolio" id="portofolio">
+  <h2>بعـض أعـمـالنا </h2>
+  <div class="before-after-txt " > 
+    <p>قبل</p>
+    <p>بعد</p>
+  </div>
+        <div  class="before-after " >
+          
+          <img  src="./assets/com1.webp" alt="الصورة 1 قبل">
+          <img  src="./assets/com1-1.webp" alt="الصورة 1 بعد">
+      </div>
+  
+      <div class="before-after">
+          <img src="./assets/com2.webp" alt="الصورة 2 قبل">
+          <img src="./assets/com2-2.webp" alt="الصورة 2 بعد">
+      </div>
+  
+      <div  class="before-after">
+          <img src="./assets/com3.webp" alt="الصورة 3 قبل">
+          <img src="./assets/com3-3.webp" alt="الصورة 3 بعد">
+      </div>
+      </div>
+      
+    
+ 
+
+
+
+
+
      <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <!-- Bootstrap JS -->
@@ -114,56 +151,8 @@
        <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-        var typed = new Typed('#element', {
-        strings: ['<i> صحة بشرتك ونضارتها</i> ', 'أولويتنا القصوي.'],
-        typeSpeed: 70,
-        backSpeed: 10,
-        backDelay: 1000,
-        cursorChar: "|",
-        fadeOut: true,
-        loop: true,
-        loopCount:5
-        });
-    </script>
+    
     <script src="2.js"></script>
-    <!-- Custom JavaScript of mySwiper -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const swiper = new Swiper(".mySwiper", {
-          slidesPerView: 'auto', // Auto adjust slides per view based on width
-          spaceBetween: 20,
-          loop: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-
-         const servicesTitle = document.querySelector('.services h3');
-  
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.2, // Percentage of the element that must be visible
-            };
-
-            //  for h1 animation
-            const servicesObserver = new IntersectionObserver(function(entries){
-                entries.forEach(entry =>{
-                    if(entry.isIntersecting){
-                        servicesTitle.classList.add('show');
-                        servicesObserver.unobserve(servicesTitle); // Stop observing after animation
-                        
-                    }
-                })
-            },observerOptions);
-             servicesObserver.observe(servicesTitle);
-      });
-     </script>
+   
 </body>
 </html>
