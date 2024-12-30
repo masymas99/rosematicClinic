@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/android-icon-36x36.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -26,15 +28,19 @@
     <!-- Before After Slider CSS -->
      <link rel="stylesheet" href="https://unpkg.com/before-after-slider-component@latest/dist/style.css">
      <script src="https://cdn.jsdelivr.net/npm/before-after-slider@1.0.0/dist/slider.bundle.js"></script>
-
+     <!-- Lightbox -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- <div id="loader">
+    <div class="loader-spinner"></div>
+</div> -->
   <div class="bodybackground">
 
   </div>
-        <div class="whatsappbttn"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
+        <div class="whatsappbttn"><a href="http://wa.me/201147161210" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -51,17 +57,17 @@
                             <a class="nav-link" href="#services">الخدمات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portofolio"> بـعض أعمالنا   </a>
+                            <a class="nav-link" href="#portofolio">  أعمالنا   </a>
                         </li>
                         
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#">مواعيد العمل</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="#about"> لماذا روزماتيك</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">اتصل بنا</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">عناوين العيادات </a>
+                            <a class="nav-link " href="#locasions">عناوين العيادات </a>
                         </li>
                     </ul>
                 </div>
@@ -121,36 +127,48 @@
 
 
 
- <div class="portofolio" id="portofolio">
-  <h2>بعـض أعـمـالنا </h2>
-  <div class="before-after-txt " > 
-    <p>قبل</p>
-    <p>بعد</p>
+   <div class="portofolio" id="portofolio">
+    <h2 data-aos="fade-down"> أعـمـالنا </h2>
+    <div class="before-after-txt" data-aos="fade-up"> 
+      <p>قبل</p>
+      <p>بعد</p>
+    </div>
+    <div class="before-after" data-aos="fade-up" data-aos-delay="100">
+      <a href="./assets/com1.webp" data-lightbox="portfolio" data-title="الصورة 1 قبل">
+        <img src="./assets/com1.webp" alt="الصورة 1 قبل">
+      </a>
+      <a href="./assets/com1-1.webp" data-lightbox="portfolio" data-title="الصورة 1 بعد">
+        <img src="./assets/com1-1.webp" alt="الصورة 1 بعد">
+      </a>
+    </div>
+    <div class="before-after-txt" data-aos="fade-up" data-aos-delay="200"> 
+      <p>قبل</p>
+      <p>بعد</p>
+    </div>
+    <div class="before-after" data-aos="fade-up" data-aos-delay="300">
+      <a href="./assets/com2.webp" data-lightbox="portfolio" data-title="الصورة 2 قبل">
+        <img src="./assets/com2.webp" alt="الصورة 2 قبل">
+      </a>
+      <a href="./assets/com2-2.webp" data-lightbox="portfolio" data-title="الصورة 2 بعد">
+        <img src="./assets/com2-2.webp" alt="الصورة 2 بعد">
+      </a>
+    </div>
+    <div class="before-after-txt" data-aos="fade-up" data-aos-delay="400"> 
+      <p>قبل</p>
+      <p>بعد</p>
+    </div>
+    <div class="before-after" data-aos="fade-up" data-aos-delay="500">
+      <a href="./assets/com3.webp" data-lightbox="portfolio" data-title="الصورة 3 قبل">
+        <img src="./assets/com3.webp" alt="الصورة 3 قبل">
+      </a>
+      <a href="./assets/com3-3.webp" data-lightbox="portfolio" data-title="الصورة 3 بعد">
+        <img src="./assets/com3-3.webp" alt="الصورة 3 بعد">
+      </a>
+    </div>
   </div>
-        <div  class="before-after " >
-          
-          <img  src="./assets/com1.webp" alt="الصورة 1 قبل">
-          <img  src="./assets/com1-1.webp" alt="الصورة 1 بعد">
-      </div>
-      <div class="before-after-txt " > 
-        <p>قبل</p>
-        <p>بعد</p>
-      </div>
-      <div class="before-after">
-          <img src="./assets/com2.webp" alt="الصورة 2 قبل">
-          <img src="./assets/com2-2.webp" alt="الصورة 2 بعد">
-      </div>
-      <div class="before-after-txt " > 
-        <p>قبل</p>
-        <p>بعد</p>
-      </div>
-      <div  class="before-after">
-          <img src="./assets/com3.webp" alt="الصورة 3 قبل">
-          <img src="./assets/com3-3.webp" alt="الصورة 3 بعد">
-      </div>
       <div>
-        <p>الاجهزة ونبذه مختصره </p>
-        <div class="container my-5">
+        <div id="about" class="container my-5">
+          <h2>لماذا روزماتيك ؟  </h2>
           <div class="row align-items-center">
               <!-- النص على اليسار -->
               <div class="col-md-7">
@@ -167,7 +185,7 @@
               </div>
               <!-- الصورة على اليمين -->
               <div class="col-md-5">
-                  <img src="" alt="عيادات روزماتيك" class="img-fluid rounded shadow">
+                  <img src="./assets/shortingimg.webp" alt="عيادات روزماتيك" class="img-fluid rounded shadow">
               </div>
           </div>
       </div>
@@ -175,9 +193,9 @@
       </div>
 
       <!-- locations =================== -->
-      <h2 data-aos="fade-down">عناوين الفروع</h2>
+      <h2 data-aos="fade-down" id="locasions">عناوين الفروع</h2>
       <div class="clclocations row">
-          <div class="mainlocdiv row gap-2">
+          <div class="mainlocdiv  row p-0 gap-2">
               <!-- فرع شبرا -->
               <div class="locationdiv col-10 col-md-6 col-lg-3 p-0" data-aos="fade-up" data-aos-delay="300">
                   <div class="map">
@@ -188,9 +206,9 @@
                       <p>📍فرع شبرا: الشارع الجديد ١٣ شارع ١٥ مايو الشارع الجديد بجوار مستشفى تبارك و هايبر القدس الدور التالت</p>
                   </div>
                   <div class="conntobranch">
-                      <div>للتواصل مع الفرع</div>
+                      <div>للتواصل مع فرع شبرا</div>
                       <div class="row phone_icons">
-                          <div class="col-4">01099444232 <br> 01099444232</div>
+                          <div class="col-4 phone">01080890012 <br> 01147161210</div>
                           <div class="col-8 barnchicons">
                               <a href="https://www.instagram.com/rosematic_clinic?igsh=eTYzZjd1Y2toN2xk&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram col-3"></i></a>
                               <a href="https://www.facebook.com/profile.php?id=61560354329066&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook col-3"></i></a>
@@ -214,9 +232,9 @@
                       <p>📍فرع مسكن: ٧٦ أ شارع جسر السويس ميدان الف مسكن امام محطة المترو بجوار ايتوال الدور الخامس شقة ١٠</p>
                   </div>
                   <div class="conntobranch">
-                    <div>للتواصل مع الفرع</div>
+                    <div>للتواصل مع فرع مسكن</div>
                     <div class="row phone_icons">
-                        <div class="col-4">01099444232 <br> 01099444232</div>
+                        <div class="col-4 phone">01101645026 <br> 01097673954</div>
                         <div class="col-8 barnchicons">
                             <a href="https://www.instagram.com/rosematic_clinic?igsh=eTYzZjd1Y2toN2xk&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram col-3"></i></a>
                             <a href="https://www.facebook.com/profile.php?id=61560354329066&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook col-3"></i></a>
@@ -240,9 +258,9 @@
                       <p>📍فرع فيصل: شارع فيصل الرئيسى محطة المساحة أعلىٰ المرشدى بجوار جولدن مان هوس امان مستشفي الجابري الدور الاول</p>
                   </div>
                   <div class="conntobranch">
-                    <div>للتواصل مع الفرع</div>
+                    <div>للتواصل مع فرع فيصل</div>
                     <div class="row phone_icons">
-                        <div class="col-4">01099444232 <br> 01099444232</div>
+                        <div class="col-4 phone">01055730760 </div>
                         <div class="col-8 barnchicons">
                             <a href="https://www.instagram.com/rosematic_clinic?igsh=eTYzZjd1Y2toN2xk&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram col-3"></i></a>
                             <a href="https://www.facebook.com/profile.php?id=61560354329066&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook col-3"></i></a>
@@ -257,16 +275,11 @@
               </div>
           </div>
       </div>
-     
-      
-
-      
-    
- 
 
 
 
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

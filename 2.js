@@ -9,13 +9,18 @@ var typed = new Typed('#element', {
   loopCount:5
   });
 
-  // ============Custom JavaScript of mySwiper 
 
   document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper(".mySwiper", {
       slidesPerView: 'auto', // Auto adjust slides per view based on width
       spaceBetween: 20,
       loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+     
+      
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -112,5 +117,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// window.addEventListener('load', function () {
+//   const loader = document.getElementById('loader');
+//   const content = document.getElementById('content');
 
+//   // إخفاء اللودر
+//   loader.style.display = 'none';
+
+//   // إظهار المحتوى الرئيسي بتأثير التلاشي
+//   content.style.display = 'block';
+//   setTimeout(() => {
+//       content.classList.add('show');
+//   }, 10);
+// });
 // ttttttttttttttttttttttttttttttttttttttttttttttttttt
+
