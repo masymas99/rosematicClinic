@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosematic Clinic</title>
+    <meta name="description" content="عيادات روزماتيك تقدم أفضل خدمات التجميل والعناية بالبشرة والشعر. إزالة الشعر بالليزر، تنظيف البشرة، الديرما بن، بلازما الشعر، وأكثر. احصلي على نتائج مبهرة بأسعار تنافسية.">
+    <meta name="keywords" content="إزالة الشعر بالليزر, تنظيف البشرة, الديرما بن, بلازما الشعر, علاج تساقط الشعر, عيادات تجميلية, روزماتيك, جلسات تجميلية, تجديد البشرة, تحفيز الكولاجين">
+    <meta name="author" content="روزماتيك">
+    <title>عيادات روزماتيك | أفضل خدمات التجميل والعناية بالبشرة والشعر</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+    <!-- aso-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Before After Slider CSS -->
      <link rel="stylesheet" href="https://unpkg.com/before-after-slider-component@latest/dist/style.css">
      <script src="https://cdn.jsdelivr.net/npm/before-after-slider@1.0.0/dist/slider.bundle.js"></script>
@@ -26,6 +31,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bodybackground">
+
+  </div>
         <div class="whatsappbttn"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -45,9 +53,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#portofolio"> بـعض أعمالنا   </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">الأسعار</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="#">مواعيد العمل</a>
                         </li>
@@ -76,11 +82,12 @@
        <div class="services" id="services">
           <h2>ما نقدمه لبشرتك</h2>
           <!-- Swiper========================== -->
+
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide servcard">
                 <img src="./assets/1.webp" alt="" srcset>
-                <h3>تنظيف البشرة بمراحل متكاملة لاستعادة نقاء وإشراقة البشرة.</h3>
+                <h3>تنظيف البشرة  بمراحل متكاملة لاستعادة نقاء وإشراقة البشرة.</h3>
               </div>
               <div class="swiper-slide servcard">
                  <img src="./assets/2.webp" alt="" srcset>
@@ -125,17 +132,134 @@
           <img  src="./assets/com1.webp" alt="الصورة 1 قبل">
           <img  src="./assets/com1-1.webp" alt="الصورة 1 بعد">
       </div>
-  
+      <div class="before-after-txt " > 
+        <p>قبل</p>
+        <p>بعد</p>
+      </div>
       <div class="before-after">
           <img src="./assets/com2.webp" alt="الصورة 2 قبل">
           <img src="./assets/com2-2.webp" alt="الصورة 2 بعد">
       </div>
-  
+      <div class="before-after-txt " > 
+        <p>قبل</p>
+        <p>بعد</p>
+      </div>
       <div  class="before-after">
           <img src="./assets/com3.webp" alt="الصورة 3 قبل">
           <img src="./assets/com3-3.webp" alt="الصورة 3 بعد">
       </div>
+      <div>
+        <p>الاجهزة ونبذه مختصره </p>
+        <div class="container my-5">
+          <div class="row align-items-center">
+              <!-- النص على اليسار -->
+              <div class="col-md-7">
+                  <h2 class="mb-4">عيادات روزماتيك: الجمال بلمسة احترافية</h2>
+                  <p class="lead text-justify">
+                      في <strong>روزماتيك</strong>، نقدم لكِ أفضل الخدمات التجميلية والعلاجية بأحدث التقنيات العالمية. 
+                      من إزالة الشعر بالليزر بأجهزة <strong>كانديلا</strong>، إلى تنظيف البشرة وتقشيرها، وعلاجات <strong>الديرما بن</strong> 
+                      لتحفيز الكولاجين، وصولاً إلى جلسات <strong>بلازما الشعر</strong> وعلاج التساقط. 
+                  </p>
+                  <p class="lead text-justify">
+                      نضمن لكِ نتائج مبهرة بأسعار تنافسية، لأن جمالك يستحق الأفضل. 
+                      زورينا اليوم وعيشي تجربة تجميلية فريدة!
+                  </p>
+              </div>
+              <!-- الصورة على اليمين -->
+              <div class="col-md-5">
+                  <img src="" alt="عيادات روزماتيك" class="img-fluid rounded shadow">
+              </div>
+          </div>
       </div>
+      </div>
+      </div>
+
+      <!-- locations =================== -->
+      <h2 data-aos="fade-down">عناوين الفروع</h2>
+      <div class="clclocations row">
+          <div class="mainlocdiv row gap-2">
+              <!-- فرع شبرا -->
+              <div class="locationdiv col-10 col-md-6 col-lg-3 p-0" data-aos="fade-up" data-aos-delay="300">
+                  <div class="map">
+                      <div class="overlay"></div>
+                      <p>فرع <br> شبرا</p>
+                  </div>
+                  <div class="address">
+                      <p>📍فرع شبرا: الشارع الجديد ١٣ شارع ١٥ مايو الشارع الجديد بجوار مستشفى تبارك و هايبر القدس الدور التالت</p>
+                  </div>
+                  <div class="conntobranch">
+                      <div>للتواصل مع الفرع</div>
+                      <div class="row phone_icons">
+                          <div class="col-4">01099444232 <br> 01099444232</div>
+                          <div class="col-8 barnchicons">
+                              <a href="https://www.instagram.com/rosematic_clinic?igsh=eTYzZjd1Y2toN2xk&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram col-3"></i></a>
+                              <a href="https://www.facebook.com/profile.php?id=61560354329066&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook col-3"></i></a>
+                              <a href="https://www.tiktok.com/@rosematicclinic?_t=8qLaExuO8fQ&_r=1" target="_blank"><i class="fa-brands fa-tiktok col-3"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <a href="https://maps.app.goo.gl/ixw8QSbptqYq1xnQ7" type="button" target="_blank" class="btn btn-primary showmap">
+                      <p>إضغط للعرض في الخريطة</p>
+                      <i class="fa-solid fa-location-dot"></i>
+                  </a>
+              </div>
+  
+              <!-- فرع مسكن -->
+              <div class="locationdiv col-10 col-md-6 col-lg-3 p-0" data-aos="fade-up" data-aos-delay="400">
+                  <div class="map">
+                      <div class="overlay"></div>
+                      <p>فرع <br> مسكن</p>
+                  </div>
+                  <div class="address">
+                      <p>📍فرع مسكن: ٧٦ أ شارع جسر السويس ميدان الف مسكن امام محطة المترو بجوار ايتوال الدور الخامس شقة ١٠</p>
+                  </div>
+                  <div class="conntobranch">
+                    <div>للتواصل مع الفرع</div>
+                    <div class="row phone_icons">
+                        <div class="col-4">01099444232 <br> 01099444232</div>
+                        <div class="col-8 barnchicons">
+                            <a href="https://www.instagram.com/rosematic_clinic?igsh=eTYzZjd1Y2toN2xk&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram col-3"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61560354329066&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook col-3"></i></a>
+                            <a href="https://www.tiktok.com/@rosematicclinic?_t=8qLaExuO8fQ&_r=1" target="_blank"><i class="fa-brands fa-tiktok col-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                  <a href="https://maps.google.com/?q=30.120239,31.340456" type="button" target="_blank" class="btn btn-primary showmap">
+                      <p>إضغط للعرض في الخريطة</p>
+                      <i class="fa-solid fa-location-dot"></i>
+                  </a>
+              </div>
+  
+              <!-- فرع فيصل -->
+              <div class="locationdiv col-10 col-md-6 col-lg-3 p-0" data-aos="fade-up" data-aos-delay="600">
+                  <div class="map">
+                      <div class="overlay"></div>
+                      <p>فرع <br> فيصل</p>
+                  </div>
+                  <div class="address">
+                      <p>📍فرع فيصل: شارع فيصل الرئيسى محطة المساحة أعلىٰ المرشدى بجوار جولدن مان هوس امان مستشفي الجابري الدور الاول</p>
+                  </div>
+                  <div class="conntobranch">
+                    <div>للتواصل مع الفرع</div>
+                    <div class="row phone_icons">
+                        <div class="col-4">01099444232 <br> 01099444232</div>
+                        <div class="col-8 barnchicons">
+                            <a href="https://www.instagram.com/rosematic_clinic?igsh=eTYzZjd1Y2toN2xk&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram col-3"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61560354329066&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook col-3"></i></a>
+                            <a href="https://www.tiktok.com/@rosematicclinic?_t=8qLaExuO8fQ&_r=1" target="_blank"><i class="fa-brands fa-tiktok col-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                  <a href="https://maps.google.com/?q=30.010914,31.191690" target="_blank" type="button" class="btn btn-primary showmap">
+                      <p>إضغط للعرض في الخريطة</p>
+                      <i class="fa-solid fa-location-dot"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+     
+      
+
       
     
  
@@ -143,7 +267,10 @@
 
 
 
-
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
      <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <!-- Bootstrap JS -->
