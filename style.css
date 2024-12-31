@@ -636,10 +636,83 @@ h3 {
 .servcards:nth-child(6) {
     transition-delay: 0.2s;
 }
+/* foooooooooooooooooooooooooooooooter */
+.foooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    height: 150px;
+    width: 100%;
+    background-color: #dfdfe14f;
+}
+.footerlogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;}
 
+.barnchicons{
+width: 200px;
+margin-top: 20px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.barnchicons a{
+ 
+    
+    text-decoration: none;
+    color: #000000;
+}
+.barnchicons i{
+    margin-left:50px ;
+    font-size: 25px;
+    color: #000000;
+}
+.footericons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+@media screen and (max-width: 600px) {
+    .foooter {
+        flex-direction: column; /* تغيير اتجاه العناصر إلى عمودي */
+        height: auto; /* الارتفاع التلقائي */
+        padding: 20px 0; /* إضافة مسافة حول المحتوى */
+    }
 
+    .footerlogo, .barnchicons, .footericons {
+        width: 100%; /* جعل العرض 100% للشاشات الصغيرة */
+        margin-bottom: 20px; /* إضافة مسافة أسفل كل قسم */
+    }
+
+    
+
+    .barnchicons a {
+        display: flex;
+        align-items: center;
+    justify-content: center;
+        margin: 10px 0; /* زيادة المسافة بين العناصر */
+    }
+
+    .barnchicons a::before {
+        margin-right: 10px; /* مسافة بين الرمز والنص */
+        font-size: 20px;
+        color: #000000;
+    }
+
+    /* زيادة ارتفاع العنصر إذا كان يحتوي على رقمين */
+    .barnchicons a.double-digit {
+        height: 120px; /* زيادة الارتفاع */
+    }
+}
+
+ 
 
 
 /* media query */
@@ -736,7 +809,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+
     width: 100%;
 }
 .locationdiv {
@@ -744,7 +817,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 350px;
     background: linear-gradient(200deg, #f5f7fa, #183055);
     border-radius: 19px;
     box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.2);
@@ -795,13 +868,12 @@ h2 {
     color: #fcfcfc;
     font-size: 60px;
     position: relative;
-    top: -89%;
+    top: -102%;
 }
 .btn {
     width: 100%;
     color: #ffffff;
     border-radius: 0px 0px 19px 19px;
-    background-color: #3c2465;
     transition: background-color 0.3s ease;
 }
 .btn:hover {
@@ -811,7 +883,8 @@ h2 {
     margin: 12px;
     padding: 12px;
     width: 100%;
-    height: 20%;
+    height: 27%;
+    font-size: small;
     text-align: justify;
     display: flex;
     justify-content: center;
@@ -826,23 +899,21 @@ h2 {
     padding: 12px;
     width: 100%;
     position: relative;
-    bottom: 43px;
-    height: 90%;
+    height: 60px;
+   
 }
 .showmap p {
     margin: 0px;
     font-size: 20px;
 }
 .conntobranch {
-    position: relative;
-    bottom: 19px;
+    
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
     width: 100%;
-    height: 100px;
-    color: #ffffff;
+    color: #000000;
 }
 .phone_icons {
     position: relative;
@@ -860,6 +931,7 @@ h2 {
 }
 .phone{
     text-align: end;
+    margin-right: 12px;
 }
 .fa-brands {
     font-size: 30px;
@@ -886,7 +958,7 @@ h2 {
         position: relative;
         width: 206px;
         top: 15vh;
-        right: 10vw;
+        right: 7vw;
         transform: translate(-50%, -50%);
         font-size: 25px;
         color: rgb(255, 255, 255);
@@ -940,12 +1012,8 @@ h2 {
         width: 85%;
         font-size: 20px;
     }
-    .phone {
-        display: flex;
-
-        position: relative;
-        left: 35px;
-    }
+    
+    
     .address p{
         font-size: 15px;
     }
@@ -960,9 +1028,16 @@ h2 {
         background-color: #e32b7ba7;
         border-radius: 19px;
     }
-    
+    .conntobranch{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
+        font-size: 12px;
+        height: 33px;
+    }
    
-  
+
 }
 
 
@@ -1088,4 +1163,3 @@ h2 {
         font-size: 40px;
     }
 }
-
