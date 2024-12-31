@@ -34,6 +34,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="preloader" style="display: none;">
+    <div class="loader" ></div>
+    </div>
   <!-- <div id="loader">
     <div class="loader-spinner"></div>
 </div> -->
@@ -76,7 +79,7 @@
         <!-- Header -->
         <div class="header">
             <div class="headerdiv">
-                <div class="logo"><img src="./assets/logo.png" alt="Rosematic Logo"></div>
+                <div class="logo"><img src="./assets/logo.webp" alt="Rosematic Logo"></div>
                 <div class="headerdiv2">
                     <h1 class="headertext1">مجموعة عيادات <span style="color: rgb(226, 43, 122);">روز</span>ماتيك</h1>
                     <span id="element"></span>
@@ -125,47 +128,39 @@
     </div>
    <!-- Portofolio =============== -->
 
-
-
    <div class="portofolio" id="portofolio">
-    <h2 data-aos="fade-down"> أعـمـالنا </h2>
-    <div class="before-after-txt" data-aos="fade-up"> 
-      <p>قبل</p>
-      <p>بعد</p>
+    <h2 data-aos="fade-down">أعمالنا</h2>
+    <div class="before-after-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="before-after-image">
+            <img src="./assets/com1.webp" alt="قبل">
+            <div class="before-label">قبل</div>
+        </div>
+        <div class="before-after-image">
+            <img src="./assets/com1-1.webp" alt="بعد">
+            <div class="after-label">بعد</div>
+        </div>
     </div>
-    <div class="before-after" data-aos="fade-up" data-aos-delay="100">
-      <a href="./assets/com1.webp" data-lightbox="portfolio" data-title="الصورة 1 قبل">
-        <img src="./assets/com1.webp" alt="الصورة 1 قبل">
-      </a>
-      <a href="./assets/com1-1.webp" data-lightbox="portfolio" data-title="الصورة 1 بعد">
-        <img src="./assets/com1-1.webp" alt="الصورة 1 بعد">
-      </a>
+    <div class="before-after-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="before-after-image">
+            <img src="./assets/com2.webp" alt="قبل">
+            <div class="before-label">قبل</div>
+        </div>
+        <div class="before-after-image">
+            <img src="./assets/com2-2.webp" alt="بعد">
+            <div class="after-label">بعد</div>
+        </div>
     </div>
-    <div class="before-after-txt" data-aos="fade-up" data-aos-delay="200"> 
-      <p>قبل</p>
-      <p>بعد</p>
+    <div class="before-after-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="before-after-image">
+            <img  src="./assets/com3.webp" alt="قبل">
+            <div class="before-label">قبل</div>
+        </div>
+        <div class="before-after-image">
+            <img src="./assets/com3-3.webp" alt="بعد">
+            <div class="after-label">بعد</div>
+        </div>
     </div>
-    <div class="before-after" data-aos="fade-up" data-aos-delay="300">
-      <a href="./assets/com2.webp" data-lightbox="portfolio" data-title="الصورة 2 قبل">
-        <img src="./assets/com2.webp" alt="الصورة 2 قبل">
-      </a>
-      <a href="./assets/com2-2.webp" data-lightbox="portfolio" data-title="الصورة 2 بعد">
-        <img src="./assets/com2-2.webp" alt="الصورة 2 بعد">
-      </a>
-    </div>
-    <div class="before-after-txt" data-aos="fade-up" data-aos-delay="400"> 
-      <p>قبل</p>
-      <p>بعد</p>
-    </div>
-    <div class="before-after" data-aos="fade-up" data-aos-delay="500">
-      <a href="./assets/com3.webp" data-lightbox="portfolio" data-title="الصورة 3 قبل">
-        <img src="./assets/com3.webp" alt="الصورة 3 قبل">
-      </a>
-      <a href="./assets/com3-3.webp" data-lightbox="portfolio" data-title="الصورة 3 بعد">
-        <img src="./assets/com3-3.webp" alt="الصورة 3 بعد">
-      </a>
-    </div>
-  </div>
+</div>
       <div>
         <div id="about" class="container my-5">
           <h2>لماذا روزماتيك ؟  </h2>
@@ -194,7 +189,7 @@
 
       <!-- locations =================== -->
       <h2 data-aos="fade-down" id="locasions">عناوين الفروع</h2>
-      <div class="clclocations row">
+      <div class="clclocations ">
           <div class="mainlocdiv  row p-0 gap-2">
               <!-- فرع شبرا -->
               <div class="locationdiv col-10 col-md-6 col-lg-3 p-0" data-aos="fade-up" data-aos-delay="300">

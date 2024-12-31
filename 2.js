@@ -132,3 +132,12 @@ document.addEventListener('DOMContentLoaded', function () {
 // });
 // ttttttttttttttttttttttttttttttttttttttttttttttttttt
 
+// loader ++++++++++++++++++++
+
+window.onload=function(){
+  var preloader = document.getElementById('preloader');
+preloader.style.display="block"
+  setTimeout(function(){
+preloader.style.display="none"
+    },1500)
+}
