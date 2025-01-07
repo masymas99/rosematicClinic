@@ -364,7 +364,7 @@ h3 {
 /* swiper css */
   .swiper {
     width: 80%;
-    height: auto; /* adjust as needed */
+    height: 425px; /* adjust as needed */
     margin: 20px auto;
     position: relative;
     
@@ -1117,12 +1117,12 @@ h2 {
         filter: grayscale(100%);
     }
 
-    .servcard img:hover {
+    /* .servcard img:hover {
         filter: grayscale(0%);
 
         transform: scale(1.2);
         transition: transform 0.3s ease-in-out;
-    }
+    } */
 
 
     .logo img {
