@@ -50,45 +50,7 @@ html {
       border: 4px solid #f44336;
       border-left-color: transparent;
   }}
-  /* loader ================ */
-  /* #loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1000;
-}
-.loader-spinner {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #e32b7b;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-#loader p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #e32b7b;
-}
-#content {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-#content.show {
-    opacity: 1;
-} */
+
 
 .navbar {
     background-color: #e32b7b;
@@ -281,34 +243,7 @@ h3 {
 /* header================== */
 
 
-/* .btn {
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    background-color: #e32b7b;
-    position: relative;
-    width: 140px;
-    height: 47px;
-    top: -24vh;
-    left: -37%;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    z-index: 5;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-}
 
-.btn p {
-    margin: 0px;
-    padding: 0px;
-}
-
-.btn i {
-    margin: 0px;
-    padding: 0px;
-} */
 
 
 /* =======================services================ */
@@ -768,35 +703,7 @@ display: flex;
         font-size: 20px;
     }
 }
-/* short notes */
 
-
-    .container {
-        padding: 20px;
-    }
-    h2 {
-        font-size: 2rem;
-        color: #333;
-        font-weight: bold;
-    }
-    .lead {
-        font-size: 1.1rem;
-        color: #555;
-        line-height: 1.8;
-    }
-    .text-justify {
-        text-align: justify;
-    }
-    .img-fluid {
-        max-width: 100%;
-        height: auto;
-    }
-    .rounded {
-        border-radius: 15px;
-    }
-    .shadow {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
 
 
 /* locations ========================================== */
@@ -950,7 +857,7 @@ h2 {
 
 
 
-/* ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+
 
 
 
@@ -1145,6 +1052,7 @@ h2 {
         font-size: 20px;
     }
     .whatsappbttn {
+        
         position: fixed;
         width: 70px;
         height: 70px;
@@ -1158,6 +1066,7 @@ h2 {
     }
 
     .whatsappbttn i {
+
         color: #f6f9f8;
         position: relative;
         top: 57%;
