@@ -1,5 +1,5 @@
 var typed = new Typed('#element', {
-  strings: ['<i> صحة بشرتك ونضارتها</i> ', 'أولويتنا القصوي.'],
+  strings: ['<i>لمسة جمال</i>', 'فوق الخيال'],
   typeSpeed: 70,
   backSpeed: 10,
   backDelay: 1000,
